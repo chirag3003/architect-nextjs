@@ -1,6 +1,6 @@
 import React from 'react';
 import {Swiper, SwiperSlide} from "swiper/react";
-import {Navigation, Pagination, Scrollbar, A11y} from 'swiper';
+import {Navigation, Pagination, Scrollbar, A11y,Autoplay} from 'swiper';
 import "swiper/css"
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -10,9 +10,12 @@ type props = {
     slidesPerView?: number;
     carouselChildren: JSX.Element[],
     className?: string;
+    autoplay?:{
+        delay:number
+    }
 }
 
-function Index({slidesPerView = 1, carouselChildren, ...Props}: props) {
+function Carousels({slidesPerView = 1, carouselChildren, ...Props}: props) {
     return (
         <Swiper
             spaceBetween={50}
@@ -20,9 +23,10 @@ function Index({slidesPerView = 1, carouselChildren, ...Props}: props) {
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
             navigation={true}
-            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
             pagination={{clickable: true}}
-            className={`h-full w-full ${Props.className}`}
+            autoplay={Props.autoplay?Props.autoplay:{}}
+            className={`h-full w-full ${Props.className ? Props.className : ""}`}
         >
             {carouselChildren?.map((child, index) => {
                 return (
@@ -35,4 +39,4 @@ function Index({slidesPerView = 1, carouselChildren, ...Props}: props) {
     );
 }
 
-export default Index;
+export default Carousels;
