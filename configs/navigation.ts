@@ -4,7 +4,7 @@ const navigation = [
     {name: 'Awards', href: '#'},
     {name: 'Clients', href: '#'},
     {name: 'Testimonials', href: '#'},
-    {name: 'Contact Us', href: '#'},
+    {name: 'Contact Us', href: '/contact'},
 ]
 
 export default navigation
