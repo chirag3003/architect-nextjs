@@ -4,6 +4,8 @@ import {Inter} from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import Carousels from "../components/Carousels";
 import ImageCarousel from "../components/Carousels/ImageCarousel";
+import Layout from "../components/Layout";
+import {imageCarousel} from "../configs/carousels";
 
 const inter = Inter({subsets: ['latin']})
 
@@ -16,11 +18,11 @@ export default function Home() {
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
-            <main>
-                <div className="slide ">
-                    {/* eslint-disable-next-line react/jsx-key */}
+            <Layout>
+                <div className="images w-screen h-screen">
+                    <ImageCarousel images={imageCarousel}/>
                 </div>
-            </main>
+            </Layout>
         </>
     )
 }
