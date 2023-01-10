@@ -22,6 +22,7 @@ export default function Home() {
                 <div className="images w-screen h-screen">
                     <ImageCarousel images={imageCarousel}/>
                 </div>
+
             </Layout>
         </>
     )

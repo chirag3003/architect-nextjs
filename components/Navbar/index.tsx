@@ -8,10 +8,10 @@ import navigation from "configs/navigation";
 function Navbar() {
 
     return (
-        <Disclosure as="nav" className=" bg-opacity-20 bg-gray-50 text-white fixed top-0 left-0 w-full z-40">
+        <Disclosure as="nav" className="bg-opacity-20 bg-gray-50 text-white fixed top-0 left-0 w-full z-40">
             {({open}) => (
                 <>
-                    <div className="mx-auto  px-4 sm:px-6 lg:px-20 xl:px-48">
+                    <div className="mx-auto  px-4 sm:px-6 lg:px-20 xl:px-48 py-5">
                         <div className="flex h-16 justify-between">
 
                             <div className="flex w-full items-center justify-between">
@@ -57,7 +57,7 @@ function Navbar() {
                     </div>
 
                     <Disclosure.Panel className="sm:hidden">
-                        <div className="space-y-1 pt-2 pb-3">
+                        <div className={`bg-gray-50 bg-opacity-80 text-black space-y-1 pt-2 pb-3`}>
                             {navigation.map((item) => (
                                 <Disclosure.Button
                                     key={item.name}
