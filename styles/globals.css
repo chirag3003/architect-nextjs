@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,6 +6,7 @@
 
 :root{
   --font-serif: 'EB Garamond', serif;
+  --font-sans-serif:'Rajdhani', sans-serif;
 }
 
 *{
@@ -18,9 +19,27 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  font-family: var(--font-sans-serif);
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.image-purple{
+  background-color: #3b0f62;
+}
+.image-purple .image{
+  opacity:0.7;
+}
+
+.heading h2{
+  letter-spacing: .5rem;
+  font-weight: bold;
+  text-transform: uppercase ;
+}
+.title p{
+  font-size: 2.8rem;
+  line-height: 0.95;
 }

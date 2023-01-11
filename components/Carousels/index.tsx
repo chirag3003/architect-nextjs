@@ -27,6 +27,7 @@ function Carousels({slidesPerView = 1, carouselChildren, ...Props}: props) {
                 navigation={true}
                 modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                 pagination={{clickable: true}}
+                loop={true}
                 autoplay={Props.autoplay?Props.autoplay:{}}
                 className={`h-full w-full ${Props.className ? Props.className : ""}`}
             >

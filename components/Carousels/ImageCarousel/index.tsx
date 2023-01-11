@@ -17,14 +17,15 @@ function ImageCarousel(props: ImageCarouselProps) {
             <Carousels carouselChildren={
                 props.images.map((image, index) => {
                     return (
-                        <div className={"w-full h-full relative"} key={index}>
-                            <div className="image w-full h-full">
-                                <img className={"h-full w-full object-cover"} src={image.src} alt=""/>
+                        <div className={"w-full h-full relative image-purple"} key={index}>
+                            <div style={{
+                                backgroundImage:`url("${image.src}")`
+                            }} className="image w-full h-full">
                             </div>
-                            {image.text &&
-                                <h2 className="text w-1/2 text-white text-5xl absolute bottom-10 right-5 text-right">
-                                    {image.text}
-                                </h2>}
+                            {/*{image.text &&*/}
+                            {/*    <h2 className="text w-1/2 text-white text-5xl absolute bottom-10 right-5 text-right">*/}
+                            {/*        {image.text}*/}
+                            {/*    </h2>}*/}
                         </div>
                     )
                 })

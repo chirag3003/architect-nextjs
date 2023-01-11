@@ -6,6 +6,8 @@ import Carousels from "../components/Carousels";
 import ImageCarousel from "../components/Carousels/ImageCarousel";
 import Layout from "../components/Layout";
 import {imageCarousel} from "../configs/carousels";
+import AboutUs from "../components/AboutUs";
+import Projects from "../components/Projects";
 
 const inter = Inter({subsets: ['latin']})
 
@@ -22,7 +24,8 @@ export default function Home() {
                 <div className="images w-screen h-screen">
                     <ImageCarousel images={imageCarousel}/>
                 </div>
-
+                <AboutUs/>
+                <Projects/>
             </Layout>
         </>
     )

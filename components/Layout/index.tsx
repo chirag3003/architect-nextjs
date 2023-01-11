@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from "../Navbar";
 type props = {
-    children?: JSX.Element;
+    children?: React.ReactNode;
 }
 function Layout({children}:props) {
     return (
