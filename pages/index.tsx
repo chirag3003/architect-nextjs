@@ -21,9 +21,9 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
             <Layout>
-                <div className="images w-screen h-screen">
+                <section id={"landing-carousel"} className="images w-screen h-screen">
                     <ImageCarousel images={imageCarousel}/>
-                </div>
+                </section>
                 <AboutUs/>
                 <Projects/>
             </Layout>
