@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export default styled.nav`
+export default styled.header`
 
   .nav-container {
     :before {

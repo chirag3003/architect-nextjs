@@ -1,3 +1,5 @@
+import {Facebook, Instagram, Twitter, Youtube} from "react-feather";
+
 const navigation = [
     {name: 'Projects', href: '#'},
     {name: 'About', href: '#'},
@@ -6,4 +8,33 @@ const navigation = [
     {name: 'Contact Us', href: '/contact'},
 ]
 
-export default navigation
+const menuItems = [{
+    name:"Home",
+    link:"#"
+},{
+    name:"About",
+    link:"#"
+},{
+    name:"Contact",
+    link:"/contact"
+},]
+
+const socialLinks = [{
+    icon:Facebook,
+    title:"Facebook",
+    link:"#"
+},{
+    icon:Twitter,
+    title:"Twitter",
+    link:"#"
+},{
+    icon:Instagram,
+    title:"Instagram",
+    link:"#"
+},{
+    icon:Youtube,
+    title:"Youtube",
+    link:"#"
+},]
+
+export {menuItems,socialLinks}

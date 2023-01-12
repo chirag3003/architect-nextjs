@@ -4,7 +4,7 @@ import LineElement from "../LineElement";
 
 function Projects() {
     return (
-        <ProjectsStyle className={"py-40 xl:px-80 lg:px-52  px-5 flex flex-col items-center"}>
+        <ProjectsStyle className={"py-40 xl:px-80 lg:px-44  px-5 flex flex-col items-center"}>
             <LineElement/>
             <div className="heading mt-8 mb-5 text-center">
                 <h2>Our Latest Projects</h2>

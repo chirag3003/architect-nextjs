@@ -18,10 +18,13 @@ export default styled.div`
     background: black;
     opacity: 1;
     transition:0.1s;
+    border-radius: 0;
+    height: 3px;
+    width: 1.2rem;
   }
   .swiper-pagination-bullet-active{
-    background: white !important;
+    background: rgb(243 244 246) !important;
     transition:0.1s;
-    transform: scale(1.2);
+    //transform: scale(1.2);
   }
 `

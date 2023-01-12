@@ -36,7 +36,8 @@ function ImageCarousel(props: ImageCarouselProps) {
                         </div>
                     )
                 })
-            }/>
+            }
+            autoplay={{delay:5000}}/>
         </ImageCarouselStyle>
     );
 }

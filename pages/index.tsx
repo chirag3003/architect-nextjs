@@ -8,6 +8,7 @@ import Layout from "../components/Layout";
 import {imageCarousel} from "../configs/carousels";
 import AboutUs from "../components/AboutUs";
 import Projects from "../components/Projects";
+import Testimonials from "../components/Testimonials";
 
 const inter = Inter({subsets: ['latin']})
 
@@ -26,6 +27,7 @@ export default function Home() {
                 </section>
                 <AboutUs/>
                 <Projects/>
+                <Testimonials/>
             </Layout>
         </>
     )
