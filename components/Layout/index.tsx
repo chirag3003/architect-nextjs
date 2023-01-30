@@ -8,7 +8,7 @@ function Layout({children}:props) {
     return (
         <>
             <Navbar/>
-            <main>
+            <main  className={"min-h-screen"}>
                 {children}
             </main>
             <Footer/>
