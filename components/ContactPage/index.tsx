@@ -1,6 +1,5 @@
 import React from 'react';
-import Touch from "./Touch";
-import Location from "./Touch/Location";
+import ContactForm from "./ContactForm";
 import ContactPageStyle from "./ContactPage.style";
 
 function ContactPage() {
@@ -15,10 +14,7 @@ function ContactPage() {
                     <p className={"lg:text-2xl mt-4 lg:font-medium"}>We very much appreciate your interest in us.</p>
                 </div>
             </div>
-            <div className="divide-y-2 divide-gray-200 mx-auto max-w-7xl py-16 px-6 lg:py-24 lg:px-8">
-                <Touch/>
-                <Location/>
-            </div>
+            <ContactForm/>
         </ContactPageStyle>
     );
 }

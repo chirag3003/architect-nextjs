@@ -1,6 +1,7 @@
 import React from 'react';
 import AboutUsStyle from "./AboutUs.style";
 import LineElement from "../LineElement";
+import Link from "next/link";
 
 
 function AboutUs() {
@@ -24,14 +25,10 @@ function AboutUs() {
                             dui sapien eget mi proin. Lorem sed risus ultricies tristique nulla aliquet enim tortor at.
                             Viverra suspendisse potenti nullam ac tortor vitae purus. Sollicitudin aliquam ultrices sagittis
                             orci. Viverra justo nec ultrices dui sapien eget. Sed elementum tempus egestas.
-                            <br/><br/>
-                            Nibh tellus molestie nunc non blandit massa. In tellus integer feugiat scelerisque varius. Risus
-                            sed vulputate odio ut enim blandit. Eu ultrices vitae auctor eu augue ut lectus arcu bibendum.
-                            Purus in massa tempor nec feugiat nisl pretium fusce. Pellentesque eu tincidunt tortor aliquam
-                            nulla. Maecenas ultricies mi eget mauris pharetra et ultrices neque. Vulputate eu scelerisque
-                            felis imperdiet proin fermentum leo vel orci. Adipiscing tristique risus nec feugiat in.
-
                         </p>
+                        <Link href={"/about"} passHref={true}>
+                            <p  className="know-more mt-6 font-medium text-yellow-600  text-2xl">Know More &#8594;</p>
+                        </Link>
                     </div>
                 </article>
             </div>

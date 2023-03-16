@@ -9,32 +9,35 @@ const navigation = [
 ]
 
 const menuItems = [{
-    name:"Home",
-    link:"#"
-},{
-    name:"About",
-    link:"/about"
-},{
-    name:"Contact",
-    link:"/contact"
+    name: "Home",
+    link: "#"
+}, {
+    name: "Projects",
+    link: "projects"
+}, {
+    name: "About",
+    link: "/about"
+}, {
+    name: "Contact",
+    link: "/contact"
 },]
 
 const socialLinks = [{
-    icon:Facebook,
-    title:"Facebook",
-    link:"#"
-},{
-    icon:Twitter,
-    title:"Twitter",
-    link:"#"
-},{
-    icon:Instagram,
-    title:"Instagram",
-    link:"#"
-},{
-    icon:Youtube,
-    title:"Youtube",
-    link:"#"
+    icon: Facebook,
+    title: "Facebook",
+    link: "#"
+}, {
+    icon: Twitter,
+    title: "Twitter",
+    link: "#"
+}, {
+    icon: Instagram,
+    title: "Instagram",
+    link: "#"
+}, {
+    icon: Youtube,
+    title: "Youtube",
+    link: "#"
 },]
 
-export {menuItems,socialLinks}
+export {menuItems, socialLinks}
