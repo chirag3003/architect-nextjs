@@ -1,13 +1,5 @@
 import {Facebook, Instagram, Twitter, Youtube} from "react-feather";
 
-const navigation = [
-    {name: 'Projects', href: '#'},
-    {name: 'About', href: '#'},
-    {name: 'Awards', href: '#'},
-    {name: 'Testimonials', href: '#'},
-    {name: 'Contact Us', href: '/contact'},
-]
-
 const menuItems = [{
     name: "Home",
     link: "#"

@@ -56,8 +56,8 @@ export default function ContactForm() {
                                     <PhoneIcon className="h-7 w-6 text-gray-400" aria-hidden="true"/>
                                 </dt>
                                 <dd>
-                                    <a className="hover:text-gray-900" href="tel:+1 (555) 234-5678">
-                                        +1 (555) 234-5678
+                                    <a className="hover:text-gray-900" href="tel:+91 00000 00000">
+                                        +91 00000 00000
                                     </a>
                                 </dd>
                             </div>

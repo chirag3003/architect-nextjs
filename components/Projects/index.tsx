@@ -13,7 +13,7 @@ function Projects() {
                 <p className={""}>Touch modern concepts and designs with Firm Architecture.</p>
             </div>
             <div className="projects flex flex-col w-full mt-20 md:mt-40">
-                <div className="project flex flex-col md:flex-row w-full">
+                <div className="project flex flex-col md:flex-row w-full" >
                     <div className="md:w-1/2 image aspect-square">
                         <img src="/images/home2.jpg" alt="" className="w-full h-full object-cover"/>
                     </div>
