@@ -1,4 +1,4 @@
-import {HomeModernIcon} from "@heroicons/react/24/outline";
+import icons from "@heroicons/react/24/outline";
 
 const demoProject = {
     image:"/images/project1/image1.jpg",
@@ -23,17 +23,17 @@ const demoProject = {
         desc:"Nibh praesent tristique magna sit amet purus gravida quis blandit. Eget sit amet tellus cras  adipiscing enim eu. Sit amet nisl purus in mollis nunc. Praesent semper feugiat nibh sed pulvinar  proin gravida. Ut etiam sit amet nisl purus in mollis nunc sed. Vulputate enim nulla aliquet  porttitor lacus luctus accumsan tortor. Enim sit amet venenatis urna. Mauris nunc congue nisi vitae  suscipit tellus mauris a",
         badges:[
             {
-                icon:HomeModernIcon,
+                icon:"HomeModernIcon",
                 title:"Planning",
                 desc:" sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
             },
             {
-                icon:HomeModernIcon,
+                icon:"HomeModernIcon",
                 title:"Planning",
                 desc:" sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
             },
             {
-                icon:HomeModernIcon,
+                icon:"HomeModernIcon",
                 title:"Planning",
                 desc:" sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
             },
