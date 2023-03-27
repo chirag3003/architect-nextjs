@@ -2,8 +2,12 @@ import React from 'react';
 
 function Projects() {
     return (
-        <div></div>
+        <div>
+            hello world
+        </div>
+
     );
 }
 
 export default Projects;
+
