@@ -22,8 +22,6 @@ function Carousels({slidesPerView = 1, carouselChildren, ...Props}: props) {
             <Swiper
                 spaceBetween={0}
                 slidesPerView={slidesPerView}
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}
                 navigation={true}
                 modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                 pagination={{clickable: true}}

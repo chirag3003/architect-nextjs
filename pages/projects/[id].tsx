@@ -30,7 +30,6 @@ export const getStaticPaths:GetStaticPaths = async () => {
 }
 
 export const getStaticProps:GetStaticProps = (context) =>  {
-    // console.log(projects["demo-project"])
     const id = context?.params?.id as string
     return {
         // @ts-ignore

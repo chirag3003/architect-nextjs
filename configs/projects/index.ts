@@ -10,6 +10,7 @@ export default projects
 type projectType = {
     image: string,
     title: string,
+    year?:string
     subtitle: string,
     dParas: string[],
     details: {

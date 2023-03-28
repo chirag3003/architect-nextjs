@@ -3,8 +3,9 @@ import icons from "@heroicons/react/24/outline";
 const demoProject = {
     image:"/images/project1/image1.jpg",
     title: "Luxury Villas and Vacation Homes of Gloria Life Center",
+    year:"2018",
     subtitle: "workplace",
-    dParas: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utjj labore et dolore magna aliqua. Urna molestie at elementum eu facilisis sed. Justo nec ultricesjj dui sapien eget mi proin. Lorem sed risus ultricies tristique nulla aliquet enim tortor at.jj Viverra suspendisse potenti nullam ac tortor vitae purus. Sollicitudin aliquam ultrices sagittisjj orci. Viverra justo nec ultrices dui sapien eget. Sed elementum tempus egestas.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utjj labore et dolore magna aliqua. Urna molestie at elementum eu facilisis sed. Justo nec ultricesjj dui sapien eget mi proin. Lorem sed risus ultricies tristique nulla aliquet enim tortor at.jj Viverra suspendisse potenti nullam ac tortor vitae purus. Sollicitudin aliquam ultrices sagittisjj orci. Viverra justo nec ultrices dui sapien eget. Sed elementum tempus egestas."],
+    dParas: ["Lorem ipsum dolor sit amet, consectetur  aliquet enim tortor at.jj Viverra suspendisse potenti nullam ac tortor vitae purus. Sollicitudin aliquam ultrices sagittisjj orci. Viverra justo nec ultrices dui sapien eget. Sed elementum tempus egestas.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utjj labore et dolore magna aliqua. Urna molestie at elementum eu facilisis sed. Justo nec ultricesjj dui sapien eget mi proin. Lorem sed risus ultricies tristique nulla aliquet enim tortor at.jj Viverra suspendisse potenti nullam ac tortor vitae purus. Sollicitudin aliquam ultrices sagittisjj orci. Viverra justo nec ultrices dui sapien eget. Sed elementum tempus egestas."],
     details:[
         {
             title:"Location",

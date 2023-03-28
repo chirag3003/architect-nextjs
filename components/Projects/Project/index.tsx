@@ -55,7 +55,6 @@ function Project(props:props) {
                     {props.project.whatDone.badges.map((item,index) => {
                         // @ts-ignore
                         const Icon = icons[item.icon]
-                        console.log(Icon)
                         return (
                             <div key={index} className="flex flex-col justify-center items-center">
                                 <div className="icon text-yellow-600">
