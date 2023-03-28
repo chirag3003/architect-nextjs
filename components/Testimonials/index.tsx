@@ -1,18 +1,5 @@
-// import TestimonialStyle from "./Testimonial.style";
-// import TestimonialCarousel from "../Carousels/TestimonialCarousel";
-import testimonials from "configs/testimonials";
 
-// function Testimonials() {
-//     return (
-//         <TestimonialStyle className={"p-10 bg-yellow-100  bg-opacity-10"}>
-//             <article itemProp={"Our Testimonials"} className={"w-full max-w-xl"}>
-//                 <TestimonialCarousel testimonials={testimonials}/>
-//             </article>
-//         </TestimonialStyle>
-//     );
-// }
-//
-// export default Testimonials;
+import testimonials from "configs/testimonials";
 
 
 export default function Testimonials() {
@@ -26,9 +13,9 @@ export default function Testimonials() {
                     </p>
                 </div>
                 <div className="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
-                    <div className="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
+                    <div className="-mt-8 sm:-mx-4  sm:text-[0] flex flex-wrap justify-center">
                         {testimonials.map((testimonial) => (
-                            <div key={testimonial.author.handle} className="pt-8 sm:inline-block sm:w-full sm:px-4">
+                            <div key={testimonial.author.handle} className="pt-8 sm:inline-block sm:w-1/2 lg:w-1/3 sm:px-4">
                                 <figure className="rounded-2xl bg-gray-50 p-8 text-sm leading-6">
                                     <blockquote className="text-gray-900">
                                         <p>{`“${testimonial.body}”`}</p>

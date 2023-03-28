@@ -5,7 +5,7 @@ import {imageCarousel} from "../configs/carousels";
 import AboutUs from "../components/AboutUs";
 import Projects from "../components/Projects";
 import Testimonials from "../components/Testimonials";
-
+import Clients from "components/Clients"
 
 export default function Home() {
     return (
@@ -23,6 +23,7 @@ export default function Home() {
                 <AboutUs/>
                 <Projects/>
                 <Testimonials/>
+                <Clients />
             </Layout>
         </>
     )
