@@ -1,6 +1,35 @@
 import {BuildingOffice2Icon, EnvelopeIcon, PhoneIcon} from '@heroicons/react/24/outline'
+import {ChangeEvent, FormEvent, useState} from "react";
+import {toast, Toaster} from "react-hot-toast";
 
 export default function ContactForm() {
+    const [data, setData] = useState({})
+    const updateData = (e: ChangeEvent) => {
+        const {name, value} = e.target as HTMLInputElement
+        setData(old => {
+            return {
+                ...old,
+                [name]: value
+            }
+        })
+    }
+
+    function sendEmail(e: FormEvent) {
+        e.preventDefault()
+        fetch("/api/email", {
+            body: JSON.stringify(data),
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            }
+        }).then(res => {
+            toast.error("Error sending message!")
+        }).catch(err => {
+            console.error(err)
+
+        })
+    }
+
     return (
         <div className="relative isolate bg-white">
             <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
@@ -75,7 +104,8 @@ export default function ContactForm() {
                         </dl>
                     </div>
                 </div>
-                <form action="#" method="POST" className="px-6 pb-24 pt-20 sm:pb-32 lg:py-48 lg:px-8">
+                <form action={"/api/email"} method={"POST"} onSubmit={sendEmail}
+                      className="px-6 pb-24 pt-20 sm:pb-32 lg:py-48 lg:px-8">
                     <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
                         <div className="grid grid-cols-1 gap-y-6 gap-x-8 sm:grid-cols-2">
                             <div>
@@ -85,9 +115,11 @@ export default function ContactForm() {
                                 </label>
                                 <div className="mt-2.5">
                                     <input
+                                        onChange={updateData}
                                         type="text"
-                                        name="first-name"
+                                        name="firstName"
                                         id="first-name"
+                                        required={true}
                                         autoComplete="given-name"
                                         className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                     />
@@ -100,8 +132,9 @@ export default function ContactForm() {
                                 </label>
                                 <div className="mt-2.5">
                                     <input
+                                        onChange={updateData}
                                         type="text"
-                                        name="last-name"
+                                        name="lastName"
                                         id="last-name"
                                         autoComplete="family-name"
                                         className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -114,8 +147,10 @@ export default function ContactForm() {
                                 </label>
                                 <div className="mt-2.5">
                                     <input
+                                        onChange={updateData}
                                         type="email"
                                         name="email"
+                                        required={true}
                                         id="email"
                                         autoComplete="email"
                                         className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -129,9 +164,11 @@ export default function ContactForm() {
                                 </label>
                                 <div className="mt-2.5">
                                     <input
+                                        onChange={updateData}
                                         type="tel"
-                                        name="phone-number"
+                                        name="phoneNumber"
                                         id="phone-number"
+                                        required={true}
                                         autoComplete="tel"
                                         className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                     />
@@ -144,8 +181,10 @@ export default function ContactForm() {
                                 </label>
                                 <div className="mt-2.5">
                                   <textarea
+                                      onChange={updateData}
                                       name="message"
                                       id="message"
+                                      required={true}
                                       rows={4}
                                       className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                       defaultValue={''}
@@ -164,6 +203,9 @@ export default function ContactForm() {
                     </div>
                 </form>
             </div>
+            <Toaster position="bottom-right"
+                     reverseOrder={false}
+            />
         </div>
     )
 }

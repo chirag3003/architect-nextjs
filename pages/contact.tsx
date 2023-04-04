@@ -5,7 +5,6 @@ import ContactPage from "../components/ContactPage";
 
 function Contact() {
     return (
-
         <>
             <Head>
                 <title>Architect</title>
@@ -14,7 +13,7 @@ function Contact() {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
             <Layout>
-                    <ContactPage/>
+                <ContactPage/>
             </Layout>
         </>
     );
