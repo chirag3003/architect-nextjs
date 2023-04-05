@@ -15,23 +15,30 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         },
     });
     let error = false
-    await transporter.sendMail(
-        {
-            from: process.env.GMAIL,
-            to: "me@chirag.codes",
-            subject: `You have received a mail from ${firstName} ${lastName}`,
-            html: "<div style='width:100%;'><div style='width:100%;background-color:rgb(202 138 4 );padding:20px'>" +
-                `<h1>Email: ${email}</h1><h1>Phone Number: ${phoneNumber}</h1><h1>Message:</h1><h2>${message}</h2>` +
-                "</div></div>",
-        },
-        function (err, info) {
-            if (err) {
-                console.error(err);
-                error = true
-                return res.status(500)
+    await new Promise((resolve,reject) => {
+         transporter.sendMail(
+            {
+                from: process.env.GMAIL,
+                to: "me@chirag.codes",
+                subject: `You have received a mail from ${firstName} ${lastName}`,
+                html: "<div style='width:100%;'><div style='width:100%;background-color:rgb(202 138 4 );padding:20px'>" +
+                    `<h1>Email: ${email}</h1><h1>Phone Number: ${phoneNumber}</h1><h1>Message:</h1><h2>${message}</h2>` +
+                    "</div></div>",
+            },
+            function (err, info) {
+                if (err) {
+                    console.error(err);
+                    reject(err)
+                }else{
+                    resolve({})
+                }
             }
-        }
-    );
+        );
+    }).catch((err) => {
+        error = true
+        return res.status(500)
+    })
+
     if (!error)
-        res.status(200).send({})
+        return res.status(200).send({})
 }
