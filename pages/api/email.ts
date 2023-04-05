@@ -17,7 +17,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     let error = false
     await transporter.sendMail(
         {
-            from: "chiragbhalotia0412@gmail.com",
+            from: process.env.GMAIL,
             to: "me@chirag.codes",
             subject: `You have received a mail from ${firstName} ${lastName}`,
             html: "<div style='width:100%;'><div style='width:100%;background-color:rgb(202 138 4 );padding:20px'>" +

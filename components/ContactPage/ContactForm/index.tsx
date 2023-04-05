@@ -23,10 +23,10 @@ export default function ContactForm() {
                 "Content-Type": "application/json"
             }
         }).then(res => {
-            toast.error("Error sending message!")
+            toast.success("Message send successfully!")
         }).catch(err => {
             console.error(err)
-
+            toast.error("Error sending message!")
         })
     }
 
