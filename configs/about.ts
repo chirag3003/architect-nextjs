@@ -1,12 +1,7 @@
-export const aboutIntro = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut" +
-    "labore et dolore magna aliqua. Urna molestie at elementum eu facilisis sed. Justo nec ultrices\n" +
-    "dui sapien eget mi proin. Lorem sed risus ultricies tristique nulla aliquet enim tortor at.\n" +
-    "Viverra suspendisse potenti nullam ac tortor vitae purus. Sollicitudin aliquam ultrices sagittis\n" +
-    "orci. Viverra justo nec ultrices dui sapien eget. Sed elementum tempus egestas."
+export const aboutIntro =
+  "Founded in 1965, Creative Interiors has over the years established itself as one of the most trustworthy design studios in Mumbai. We are known for our unique approach, to architecture and interior design, which is a bespoke and very intimate process of discovering each client's personal style.";
 
 export const aboutPara = [
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut fkadsf;asdf fdskfLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut",
-    "Lorem sed risus ultricies tristique nulla aliquet enim tortor at.\n" +
-    "Viverra suspendisse potenti nullam ac tortor vitae purus. Sollicitudin aliquam ultrices sagittis\n" ,
-    "orci. Viverra justo nec ultrices dui sapien eget. Sed elementum tempus egestas."
-]
+  "Over the past few decades, Creative Interiors has emerged as a leading full-service Architecture, Interior Design and Décor firm based in Mumbai and have been working across the city on projects including commercial & residential projects.",
+  "We constantly strive to create projects that stand out because of our distinct approach towards design, detail and the latest technology. Our design philosophy is to create authentic timeless designs, which inspire everyday basis life. We aim to create spaces that reflect your style and personality, giving justice to the design process, timelines & budget.",
+  "Creative Interiors, formerly known as Rana Interiors, was established in 1965 by Mr Bansilal S. Rana, a self-motivated carpenter who started this business with lots of passion and a purpose. The purpose was to set up a design practice that has a process-oriented approach to design. Our team ensures that the design solution provided generates an environment that surpasses trends and fads by offering a more enriching spatial experience. We started as a small three-person team and have now grown to a team of over xx members.",];
