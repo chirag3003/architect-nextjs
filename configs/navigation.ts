@@ -2,10 +2,10 @@ import {Facebook, Instagram, Twitter, Youtube} from "react-feather";
 
 const menuItems = [{
     name: "Home",
-    link: "#"
+    link: "/"
 }, {
     name: "Projects",
-    link: "projects"
+    link: "/projects"
 }, {
     name: "About",
     link: "/about"
