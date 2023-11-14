@@ -38,7 +38,7 @@ function Navbar() {
     return (
         <NavbarStyle ref={navRef as any} className={"w-screen fixed top-0 left-0 text-white z-30 shadow "}>
             <div className="nav-container flex items-center justify-between relative w-full h-full py-6 px-4 lg:px-12">
-                <Link href={"/"} className="logo text-3xl font-bold"><h1>Logo</h1></Link>
+                <Link href={"/"} className="logo text-3xl font-bold"><img src='/logo.jpeg' alt="logo" className='h-20 w-auto ' /></Link>
                 <div className="items hidden lg:flex">
                     <nav className="pages flex gap-4 lg:gap-6 text-lg font-semibold lg:mr-10">
                         {menuItems.map((item,index) => {
