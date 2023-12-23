@@ -2,10 +2,7 @@ const clients = [
   {
     title: "Sony",
     img: "./sony.png",
-  },
-  {
-    title: "Aditya Birla",
-    img: "./adityabirla.jpg",
+    text: "Associated since 1995"
   },
   {
     title: "Ceat",

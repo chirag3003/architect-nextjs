@@ -6,6 +6,9 @@ const menuItems = [{
 }, {
     name: "Projects",
     link: "/projects"
+},{
+    name: 'Manufacturings', 
+    link: '/manufacturings'
 }, {
     name: "About",
     link: "/about"

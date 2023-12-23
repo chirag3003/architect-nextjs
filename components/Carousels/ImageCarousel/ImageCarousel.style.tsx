@@ -3,7 +3,7 @@ import styled from "styled-components"
 export default styled.div`
   .image {
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size:contain;
     background-position:center center;
     :before{
       content: "";
@@ -13,7 +13,7 @@ export default styled.div`
       left: 0;
       top: 0;
       z-index: 2;
-      background: -moz-linear-gradient(top,rgba(0,0,0,.5) 0,rgba(0,0,0,0) 100%);
+      // background: -moz-linear-gradient(top,rgba(0,0,0,.5) 0,rgba(0,0,0,0) 100%);
     }
   }
   
