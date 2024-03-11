@@ -85,8 +85,8 @@ export default function ContactForm() {
                                     <PhoneIcon className="h-7 w-6 text-gray-400" aria-hidden="true"/>
                                 </dt>
                                 <dd>
-                                    <a className="hover:text-gray-900" href="tel:+91 00000 00000">
-                                        +91 00000 00000
+                                    <a className="hover:text-gray-900" href="tel:+919820590232">
+                                        +91 98205 90232 / +91 98191 43699
                                     </a>
                                 </dd>
                             </div>
@@ -97,7 +97,7 @@ export default function ContactForm() {
                                 </dt>
                                 <dd>
                                     <a className="hover:text-gray-900" href="mailto:hello@example.com">
-                                        hello@example.com
+                                        creativeinterior1965@gmail.com
                                     </a>
                                 </dd>
                             </div>

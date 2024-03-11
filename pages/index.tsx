@@ -21,7 +21,7 @@ export default function Home() {
                     <ImageCarousel images={imageCarousel}/>
                 </section>
                 <AboutUs/>
-                <Projects/>
+                {/*<Projects/>*/}
                 {/* <Testimonials/> */}
                 <Clients />
             </Layout>
