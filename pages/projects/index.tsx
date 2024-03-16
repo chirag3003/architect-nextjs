@@ -15,7 +15,7 @@ export default function Projects() {
       <Layout>
         <section
           style={{
-            backgroundImage: `url("${"/images/about/about2.jpg"}")`,
+            backgroundImage: `url("${"/images/projects.png"}")`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundAttachment: "fixed",

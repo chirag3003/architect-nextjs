@@ -4,42 +4,57 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
-  --font-serif: 'EB Garamond', serif;
-  --font-sans-serif:'Rajdhani', sans-serif;
+:root {
+    --font-serif: 'EB Garamond', serif;
+    --font-sans-serif: 'Rajdhani', sans-serif;
 }
 
-*{
-  padding:0;
-  margin:0;
-  box-sizing: border-box;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
-  font-family: var(--font-sans-serif);
+    max-width: 100vw;
+    overflow-x: hidden;
+    font-family: var(--font-sans-serif);
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
-.image-purple{
-  background-color: #3b0f62;
-}
-.image-purple .image{
-  opacity:0.7;
+.image-purple {
+    background-color: #3b0f62;
 }
 
-.heading h2{
-  letter-spacing: .5rem;
-  font-weight: bold;
-  text-transform: uppercase ;
+.image-purple .image {
+    opacity: 0.7;
 }
-.title p{
-  font-size: 2.8rem;
-  line-height: 0.95;
+
+.heading h2 {
+    letter-spacing: .5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.title p {
+    font-size: 2.8rem;
+    line-height: 0.95;
+}
+
+.clients {
+    animation: infinite-slide linear infinite 10s;
+}
+
+@keyframes infinite-slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-50% - 2.5rem));
+    }
 }
