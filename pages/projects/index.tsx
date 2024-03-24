@@ -3,6 +3,7 @@ import Layout from "components/Layout";
 import React from "react";
 import projects, { projectImages } from "configs/projects";
 import Image from "next/image";
+import ReactPlayer from "react-player";
 
 export default function Projects() {
   return (
@@ -28,6 +29,9 @@ export default function Projects() {
             Our Projects
           </h1>
         </section>
+        <div className="xl:px-40 px-10 flex justify-center py-10 ">
+          <ReactPlayer url={"/project.mp4"} controls  />
+        </div>
         <div className="projects xl:p-40 p-10  grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 ">
           {projectImages.map((entry, index) => {
             return (

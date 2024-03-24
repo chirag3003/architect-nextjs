@@ -16,6 +16,10 @@ const clients = [
         title: "Sanofi",
         img: "./sanofi.svg",
     },
+    {
+        title: "VIP",
+        img: "./vip.png"
+    }
 ];
 
 export default clients;
