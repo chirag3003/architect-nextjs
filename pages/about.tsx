@@ -38,16 +38,20 @@ export default function About() {
               </p>
             );
           })}
-          <h2 className={"text-center text-4xl font-semibold mt-5"}>Our Mission</h2>
+          <h2 className={"text-center text-4xl font-semibold mt-5"}>
+            Our Mission
+          </h2>
           <p className={"py-4 text-xl text-justify"}>
             {
               "We pride ourselves on our ability to listen to our client's needs and preferences, interpret these needs, and then transform them into suitable solutions. Our attention to detail is key to making our projects places of “lived-in art”. We at Creative Interiors do not have a “signature style”. We deliberately allow our client’s tastes and desires to direct the course of our design and find that through this process our clients partake in a creative and thought-provoking experience that results in a unique, well-crafted, and beautiful end product."
             }
           </p>
-          <h2 className={"text-center text-4xl font-semibold mt-5"}>OUR VISION</h2>
+          <h2 className={"text-center text-4xl font-semibold mt-5"}>
+            OUR VISION
+          </h2>
           <p className={"py-4 text-xl text-justify"}>
             {
-              "To give a comprehensive design solution from a pin to the master plan of a city and everything in between, because we truly believe that design cannot exist in isolation."
+              "Our vision is to provide a holistic design solution that covers everything from the smallest details to the master plan of entire cities. We firmly believe that design cannot thrive in isolation; it must encompass every aspect of a project to create a cohesive and impactful outcome. By integrating all elements of design, we aim to deliver comprehensive solutions that meet the diverse needs and aspirations of our clients while also contributing positively to the built environment and society as a whole."
             }
           </p>
         </section>

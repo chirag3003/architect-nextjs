@@ -120,7 +120,7 @@ export default function ContactForm() {
                     className="hover:text-gray-900"
                     href="mailto:hello@example.com"
                   >
-                    creativeinterior1965@gmail.com
+                    creativeinterior1985@gmail.com
                   </a>
                 </dd>
               </div>
