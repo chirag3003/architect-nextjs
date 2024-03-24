@@ -31,11 +31,11 @@ function ImageCarousel(props: ImageCarouselProps) {
                 ></div>
               )}
               {image.contain && (
-                <div className="pt-60">
+                <div className="lg:pt-60 pt-32">
                   <img
                     src={image.src}
                     alt={image.text}
-                    className="w-80 mx-auto mb-10 h-auto object-contain"
+                    className="w-32 lg:w-80 mx-auto mb-10 h-auto object-contain"
                   />
                   <p className="mx-auto text-3xl text-center font-bold">{image.text}</p>
                 </div>
