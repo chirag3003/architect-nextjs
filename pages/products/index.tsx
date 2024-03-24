@@ -2,7 +2,8 @@ import Head from "next/head";
 import Layout from "components/Layout";
 import React from "react";
 import projects from "configs/projects";
-import manufacturings from "configs/manufacturings";
+import manufacturings, { manufacturingImages } from "configs/manufacturings";
+import Image from "next/image";
 
 export default function Projects() {
   return (
@@ -25,26 +26,24 @@ export default function Projects() {
           className={"h-[40vh] lg:h-[50vh] flex justify-center items-center"}
         >
           <h1 className={"text-center text-6xl font-bold"}>
-            Our Manufacturings
+            Our Products
           </h1>
         </section>
         <div className="projects xl:p-40 p-10  grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  text-black">
-          {manufacturings.map((item, index) => {
+          {manufacturingImages.map((item, index) => {
             return (
               <div
                 key={index}
-                className="project w-full flex flex-col gap-5 relative cursor-pointer rounded"
+                className="project w-full flex flex-col gap-5 relative rounded"
               >
-                <div className="image aspect-1 image hover:opacity-90">
-                  <img
-                    src={item.img}
+                <div className="image aspect-1 image">
+                  <Image
+                    src={item}
                     alt=""
+                    fill
+                    style={{objectFit: "cover", objectPosition: "center"}}
                     className="w-full h-full object-cover"
                   />
-                </div>
-                <div className=" px-2 w-full top-0">
-                  <p className="text-2xl font-semibold">{item.name}</p>
-                  <p className="text-xl text-gray-800">₹ {item.price}</p>
                 </div>
               </div>
             );
