@@ -47,7 +47,7 @@ a {
 }
 
 .clients {
-    animation: infinite-slide linear infinite 10s;
+    animation: infinite-slide linear infinite 20s;
 }
 
 @keyframes infinite-slide {
