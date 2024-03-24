@@ -2,7 +2,7 @@ import clients from "configs/clients";
 
 export default function Clients() {
     return (
-        <div className="bg-slate-200 py-14">
+        <div className="bg-gray-600  py-14">
             <div className="mx-auto max-w-xl text-center mb-20">
                 <h2 className="text-lg font-semibold leading-8 tracking-tight text-yellow-600">
                     Our Clients
