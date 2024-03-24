@@ -24,7 +24,7 @@ export default function Clients() {
                                     width={158}
                                     height={48}
                                 />
-                                {client.text && <p>{client.text}</p>}
+                                {/* {client.text && <p>{client.text}</p>} */}
                             </div>
                         );
                     })}
@@ -38,7 +38,7 @@ export default function Clients() {
                                     width={158}
                                     height={48}
                                 />
-                                {client.text && <p>{client.text}</p>}
+                                {/* {client.text && <p>{client.text}</p>} */}
                             </div>
                         );
                     })}

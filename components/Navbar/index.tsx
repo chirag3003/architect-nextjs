@@ -62,7 +62,7 @@ function Navbar() {
             })}
           </nav>
           <div className="social-links flex gap-5 items-center font-semibold ">
-            {socialLinks.map((item, index) => {
+            {/* {socialLinks.map((item, index) => {
               return (
                 <Link key={index} className={"social-link"} href={item.link}>
                   <item.icon height={15} width={15} />
@@ -73,7 +73,7 @@ function Navbar() {
                   )}
                 </Link>
               );
-            })}
+            })} */}
           </div>
         </div>
         <button
@@ -110,7 +110,7 @@ function Navbar() {
           })}
         </nav>
         <div className="social-links flex gap-5 items-center p-10 pt-0">
-          {socialLinks.map((item, index) => {
+          {/* {socialLinks.map((item, index) => {
             return (
               <Link key={index} className={"social-link"} href={item.link}>
                 <item.icon height={20} width={20} />
@@ -121,7 +121,7 @@ function Navbar() {
                 )}
               </Link>
             );
-          })}
+          })} */}
         </div>
       </div>
     </NavbarStyle>
