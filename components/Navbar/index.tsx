@@ -21,16 +21,16 @@ function Navbar() {
       background: "white",
       scrollTrigger: {
         trigger: document.querySelector("#landing-carousel"),
-        start: "30% top",
-        end: "30% top",
+        start: "10% top",
+        end: "10% top",
         scrub: true,
         onEnter: () => {
           console.log("enter");
-          setLogo("./logo2.png");
+          setLogo("/logo2.png");
         },
         onEnterBack: () => {
           console.log("leave", "enter back");
-          setLogo("./logo.png")
+          setLogo("/logo.png")
         },
       },
     });
