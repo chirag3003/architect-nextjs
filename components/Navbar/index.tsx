@@ -14,42 +14,42 @@ function Navbar() {
     e.stopPropagation();
     setSidebar((side) => !side);
   }
-  useEffect(() => {
-    // @ts-ignore
-    Gsap.to(navRef.current.querySelector(".nav-container"), {
-      color: "black",
-      background: "white",
-      scrollTrigger: {
-        trigger: document.querySelector("#landing-carousel"),
-        start: "10% top",
-        end: "10% top",
-        scrub: true,
-        onEnter: () => {
-          console.log("enter");
-          setLogo("/logo2.png");
-        },
-        onEnterBack: () => {
-          console.log("leave", "enter back");
-          setLogo("/logo.png")
-        },
-      },
-    });
-    window.addEventListener("click", function (e) {
-      e.stopPropagation();
-      if (!document?.getElementById("sidebar")?.contains(e.target as Node)) {
-        setSidebar(false);
-      }
-    });
-  }, []);
+  // useEffect(() => {
+  //   // @ts-ignore
+  //   Gsap.to(navRef.current.querySelector(".nav-container"), {
+  //     color: "black",
+  //     background: "white",
+  //     scrollTrigger: {
+  //       trigger: document.querySelector("#landing-carousel"),
+  //       start: "10% top",
+  //       end: "10% top",
+  //       scrub: true,
+  //       onEnter: () => {
+  //         console.log("enter");
+  //         setLogo("/logo2.png");
+  //       },
+  //       onEnterBack: () => {
+  //         console.log("leave", "enter back");
+  //         setLogo("/logo.png")
+  //       },
+  //     },
+  //   });
+  //   window.addEventListener("click", function (e) {
+  //     e.stopPropagation();
+  //     if (!document?.getElementById("sidebar")?.contains(e.target as Node)) {
+  //       setSidebar(false);
+  //     }
+  //   });
+  // }, []);
 
   return (
     <NavbarStyle
       ref={navRef as any}
-      className={"w-screen fixed top-0 left-0 text-white z-30 shadow "}
+      className={"w-screen fixed top-0 left-0 text-black bg-white z-30 shadow "}
     >
       <div className="nav-container flex items-center justify-between relative w-full h-full py-6 px-4 lg:px-12">
         <Link href={"/"} className="logo text-3xl font-bold">
-          <img src={logo} alt="logo" className="h-20 w-auto " />
+          <img src={'/logo2.png'} alt="logo" className="h-20 w-auto " />
         </Link>
         <div className="items hidden lg:flex">
           <nav className="pages flex gap-4 lg:gap-6 text-lg font-semibold lg:mr-10">

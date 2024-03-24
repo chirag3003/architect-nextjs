@@ -1,5 +1,10 @@
 export const imageCarousel = [
   {
+    src:"/sony.png",
+    contain: true,
+    text: "Associated since 1995"
+  },
+  {
     src: "/images/image1.jpg",
     text: "Image 1",
   },
