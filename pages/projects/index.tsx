@@ -1,7 +1,8 @@
 import Head from "next/head";
 import Layout from "components/Layout";
 import React from "react";
-import projects from "configs/projects";
+import projects, { projectImages } from "configs/projects";
+import Image from "next/image";
 
 export default function Projects() {
   return (
@@ -28,22 +29,24 @@ export default function Projects() {
           </h1>
         </section>
         <div className="projects xl:p-40 p-10  grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 ">
-          {Object.entries(projects).map((entry, index) => {
+          {projectImages.map((entry, index) => {
             return (
-              <a
+              <div
                 key={index}
-                href={`/projects/${entry[0]}`}
-                className="project w-full relative cursor-pointer image-purple rounded  aspect-1"
+                // href={`/projects/${entry[0]}`}
+                className="project w-full relative aspect-1"
               >
-                <div className="image aspect-1 image hover:opacity-90">
-                  <img
-                    src={entry[1].image}
+                <div className="image aspect-1 image">
+                  <Image
+                    src={entry}
                     alt=""
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover l"
+                    fill
+                    style={{ objectFit: "cover", objectPosition: "center" }}
                   />
                 </div>
-                <div className="content text-center flex flex-col items-center justify-center px-2 py-6 absolute w-full h-full top-0 text-white">
-                 {entry[1].year &&  <span className={"my-4  font-semibold"}>{entry[1].year}</span>}
+                {/* <div className="content text-center flex flex-col items-center justify-center px-2 py-6 absolute w-full h-full top-0 text-white">
+                  {entry[1].year &&  <span className={"my-4  font-semibold"}>{entry[1].year}</span>}
                   <h2 className={" text-3xl font-semibold"}>
                     {entry[1].title}
                   </h2>
@@ -51,8 +54,8 @@ export default function Projects() {
                     {entry[1].dParas[0]}
                   </p>
                   <p className=" my-2 font-bold">{entry[1].subtitle}</p>
-                </div>
-              </a>
+                </div> */}
+              </div>
             );
           })}
         </div>
