@@ -37,7 +37,7 @@ function ImageCarousel(props: ImageCarouselProps) {
                     alt={image.text}
                     className="w-80 mx-auto mb-10 h-auto object-contain"
                   />
-                  <p className="mx-auto text-xl text-center font-bold">{image.text}</p>
+                  <p className="mx-auto text-3xl text-center font-bold">{image.text}</p>
                 </div>
               )}
               {/* <div className="content text-white absolute top-0 left-0 h-full w-full flex justify-center items-center flex-col    ">
