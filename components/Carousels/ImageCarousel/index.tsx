@@ -20,7 +20,7 @@ function ImageCarousel(props: ImageCarouselProps) {
       <Carousels
         carouselChildren={props.images.map((image, index) => {
           return (
-            <div className={"w-full h-full relative bg-gray-50"} key={index}>
+            <div className={"w-full h-full relative bg-gray-200"} key={index}>
               {!image.contain && (
                 <div
                   style={{
@@ -31,7 +31,7 @@ function ImageCarousel(props: ImageCarouselProps) {
                 ></div>
               )}
               {image.contain && (
-                <div className="pt-40">
+                <div className="pt-60">
                   <img
                     src={image.src}
                     alt={image.text}
