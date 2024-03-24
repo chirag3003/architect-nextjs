@@ -25,9 +25,9 @@ export default function Projects() {
           id="header"
           className={"h-[40vh] lg:h-[50vh] flex justify-center items-center"}
         >
-          <h1 className={"text-center text-6xl font-bold"}>
+          {/* <h1 className={"text-center text-6xl font-bold"}>
             Our Products
-          </h1>
+          </h1> */}
         </section>
         <div className="projects xl:p-40 p-10  grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  text-black">
           {manufacturingImages.map((item, index) => {

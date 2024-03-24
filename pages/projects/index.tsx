@@ -25,9 +25,9 @@ export default function Projects() {
           id="header"
           className={"h-[40vh] lg:h-[50vh] flex justify-center items-center"}
         >
-          <h1 className={"text-center text-6xl text-white font-bold"}>
+          {/* <h1 className={"text-center text-6xl text-white font-bold"}>
             Our Projects
-          </h1>
+          </h1> */}
         </section>
         <div className="xl:px-40 px-10 flex justify-center py-10 ">
           <ReactPlayer url={"/project.mp4"} controls  />
